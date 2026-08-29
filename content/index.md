@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: Welcome to the BloxVerse documentation.
+description: Stub
 ---
 
-Welcome to the BloxVerse documentation.
+Stub

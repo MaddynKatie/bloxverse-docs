@@ -8,10 +8,6 @@ export default defineConfig({
     starlight({
       title: 'BloxVerse Docs',
       favicon: '/favicon.svg',
-      logo: {
-        src: './src/assets/bloxverse.svg',
-        replacesTitle: true,
-      },
       customCss: ['./src/styles/custom.css'],
       editLink: {
         baseUrl: 'https://github.com/MaddynKatie/bloxverse-docs/edit/main/content/',

@@ -1,6 +1,6 @@
 ---
 title: SpawnLocation
-description: Stub
+description: A SpawnLocation is used to determine where a player spawns when they join or die. 
 ---
 
-Stub
+A SpawnLocation is used to determine where a player spawns when they join or die. 

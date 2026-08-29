@@ -27,9 +27,9 @@ jobs:
 
       - name: Copy content into Astro project
         run: |
-          # Remove only content-managed subfolders; keep the site's own index.md
-          # (home page) so Astro always emits create/index.html.
-          rm -rf site-src/src/content/docs/guides site-src/src/content/docs/reference
+          # Remove only content-managed subfolders. All content (including the
+          # home page index.md) lives in content/ and is copied in below.
+          rm -rf site-src/src/content/docs/guides site-src/src/content/docs/reference site-src/src/content/docs/index.md site-src/src/content/docs/contributing.md
           cp -R content/. site-src/src/content/docs/
           mkdir -p site-src/src/assets/docs-images
           cp -R images/. site-src/src/assets/docs-images/ 2>/dev/null || true

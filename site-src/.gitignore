@@ -2,5 +2,4 @@ node_modules
 dist
 .preview
 .astro
-src/content/docs/guides/
-src/content/docs/reference/
+src/content/docs/

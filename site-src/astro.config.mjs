@@ -9,9 +9,6 @@ export default defineConfig({
       title: 'BloxVerse Docs',
       favicon: '/favicon.svg',
       customCss: ['./src/styles/custom.css'],
-      editLink: {
-        baseUrl: 'https://github.com/MaddynKatie/bloxverse-docs/edit/main/content/',
-      },
       social: {
         github: 'https://github.com/MaddynKatie/bloxverse-docs',
       },

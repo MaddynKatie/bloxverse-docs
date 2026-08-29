@@ -1,6 +1,6 @@
 ---
 title: Part
-description: Stub
+description: A part is an object that is used to build your game.
 ---
 
-Stub
+A part is an object that is used to build your game.

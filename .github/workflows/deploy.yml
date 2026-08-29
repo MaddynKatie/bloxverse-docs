@@ -1,0 +1,50 @@
+name: Build & Deploy Docs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4                 # bloxverse-docs: content/ + site-src/
+
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+        with:
+          repository: MaddynKatie/bloxverse
+          path: deploy
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Copy content into Astro project
+        run: |
+          rm -rf site-src/src/content/docs
+          mkdir -p site-src/src/content/docs
+          cp -R content/. site-src/src/content/docs/
+          mkdir -p site-src/src/assets/docs-images
+          cp -R images/. site-src/src/assets/docs-images/ 2>/dev/null || true
+
+      - name: Install & build
+        working-directory: site-src
+        run: npm ci && npm run build
+
+      - name: Commit built docs into site repo
+        working-directory: deploy
+        run: |
+          git config user.name "MaddynKatie"
+          git config user.email "probncentermaddy@gmail.com"
+          rm -rf create
+          mkdir create
+          cp -R ../site-src/dist/. create/
+          git add create
+          git diff --cached --quiet || git commit -m "docs: rebuild from bloxverse-docs @$GITHUB_SHA"
+          git push "https://x-access-token:${{ secrets.DEPLOY_PAT }}@github.com/MaddynKatie/bloxverse.git" HEAD:main

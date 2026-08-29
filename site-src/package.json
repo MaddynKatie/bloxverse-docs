@@ -1,0 +1,16 @@
+{
+  "name": "bloxverse-docs-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "pull": "node scripts/pull-content.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "@astrojs/starlight": "^0.32.0"
+  }
+}

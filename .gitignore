@@ -1,0 +1,8 @@
+node_modules
+dist
+.astro
+.preview
+# ignore site build artifacts within site-src (handled by site-src/.gitignore too)
+site-src/node_modules
+site-src/dist
+site-src/.astro

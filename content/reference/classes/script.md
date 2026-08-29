@@ -1,5 +1,5 @@
 ---
-title: Debris
+title: Script
 description: Stub
 ---
 

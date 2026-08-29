@@ -1,5 +1,5 @@
 ---
-title: Debris
+title: Workspace
 description: Stub
 ---
 

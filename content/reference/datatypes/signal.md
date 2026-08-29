@@ -1,5 +1,5 @@
 ---
-title: Debris
+title: Signal
 description: Stub
 ---
 

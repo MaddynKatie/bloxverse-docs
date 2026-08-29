@@ -1,5 +1,5 @@
 ---
-title: Debris
+title: Legacy Globals
 description: Stub
 ---
 

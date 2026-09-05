@@ -17,4 +17,4 @@ The BloxVerse Engine provides many APIs for building your game, creating parts, 
 
 This documentation will introduce you to the scripting API, and features provided by the BloxVerse Engine.
 
-If you're new to BloxVerse Studio, you may want to start with [Your First Script guide](./first-script.md).
+If you're new to BloxVerse Studio, you may want to start with [Your First Script guide](./create/guides/first-script.md).

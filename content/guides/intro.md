@@ -1,8 +1,20 @@
 ---
 title: Introduction
-description: This guide will help you learn how to make a game, or just learn the basics on how games work on BloxVerse.
+description: Introduction to BloxVerse Studio and scripting.
 ---
 
-This guide will help you learn how to make a game, or just learn the basics on how games work on BloxVerse.
+<!-- 
+Intro
+Edited by MaddynKatie on September 5th, 2026
+-->
 
-It doesn't matter how experienced you are in making games! This guide will try to be as clear as possible so that you, dear reader, will be able to understand how BloxVerse Studio works!
+# Welcome to BloxVerse Studio
+
+Welcome to BloxVerse, we're glad you're here! 
+BloxVerse is a platform that lets you create anything from simple games to large, intricate games using Luau.
+
+The BloxVerse Engine provides many APIs for building your game, creating parts, writing scripts, handling events, and much more.
+
+This documentation will introduce you to the scripting API, and features provided by the BloxVerse Engine.
+
+If you're new to BloxVerse Studio, you may want to start with [Your First Script guide](./first-script.md).
